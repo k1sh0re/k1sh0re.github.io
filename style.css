@@ -26,8 +26,8 @@ header {
     position: sticky;   
     top: 0;
     display: flex;
-    flex-direction: row-reverse;
-    padding: 10px; 
+    flex-direction: row;
+    padding: 10px ; 
     z-index: 1000;
 }
 
@@ -38,23 +38,12 @@ header {
     display: flex;
     color: #002245;
     align-items: center;
-    margin-right: 1%;
-    padding: 10px;
-    
-    /* border-style: solid;
-    border-radius: 5px;
-    border-width: 1px; 
-    border-color: darkblue; 
-    box-sizing: border-box; 
-    width: 80px;
-    height: 30px;  */
-}
-.nav_buttons.home{
-    position:absolute;
-    left: 0;
     margin-left: 1%;
-    padding: 10px;
+    padding: 10px 10px 5px; 
+    position: relative;
+
 }
+
 /* Sets the properties for hyper links */
 a{
     text-decoration: none;
@@ -62,18 +51,37 @@ a{
     
 }
 
-a:hover{
-color: #0463d6;
-
+a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #002245;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    color: #002245;
 }
 
-a.active{
-    /* text-decoration:underline;
-    text-decoration-skip-ink:none;
-    text-decoration-thickness: 1.5px; */
-    /* color: #0463d6;   */
-    font-weight: bold;
-    
+.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(1);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+}
+
+.active{
+    font-weight: bold;    
 }
 
 /* Sets the style for main part of the body */
