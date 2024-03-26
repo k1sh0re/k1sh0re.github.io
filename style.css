@@ -15,9 +15,8 @@ body {
     font-family:  RobotoSlab_regular,Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: column;
-
+    
 }
-
 
 header {
     height:  20%;
@@ -87,17 +86,21 @@ a:hover::after{
 /* Sets the style for main part of the body */
 main {
     display: flex;
-    height:  50%;
+    flex-direction: column;
+    align-items: center;
+}
+.intro {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center; 
-    animation: fadeInAnimation ease 0.5s;
+    animation: fade-in ease 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    margin-top: 15px;
+   
 }
 
-@keyframes fadeInAnimation {
+@keyframes fade-in {
     0% {
         opacity: 0;
     }
@@ -109,9 +112,10 @@ main {
 #my_image{
     height : 200px;
     width : 200px;
-    padding: 10px;
-    flex-shrink: 0;
+    margin-top: 20px;
+    margin-right: 50px;
     border-radius: 50%;
+  
 }
 
 .description{
@@ -119,16 +123,38 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content:center;
-    margin-left:  5%;
+    margin-top: 20px;
+    /* margin-left:  5%; */
 }
 
-.description_2{
-    margin: 5% 0 5% 0;
+.detail{
+    /* padding: 10px; */
+    margin: 10px 30px;
 }
-
 
 #name{
     font-weight: bold;
-    font-size: x-large;}
+    font-size: x-large;
+}
+
+.featured_projects{
+    text-align: center;
+    margin-top: 5%;
+    height:  50%;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: xx-large;
+    animation: 0.25s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -10%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
 
 
