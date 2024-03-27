@@ -7,7 +7,7 @@ font-family: RobotoSlab_light;}
 font-family: RobotoSlab_regular ;}
 
 @font-face{
-    src: url('fonts/RobotoSlab-Regular.ttf');
+    src: url('fonts/RobotoSlab-Thin.ttf');
 font-family: RobotoSlab_thin ;}
 
 body {
@@ -38,6 +38,7 @@ header {
 .nav_container{
     display: flex;
     margin-left: 15%;
+    margin-top: 1%;
 }
 .nav_buttons {
     display: flex;
@@ -145,7 +146,7 @@ main {
 
 .featured_projects{
     text-align: center;
-    margin-top: 10%;
+    margin-top: 7%;
     height:  50%;
     flex-direction: column;
     align-items: center;
@@ -199,7 +200,25 @@ main {
     width : 250px;
 }
 
-.project_title{
+.project_descript{
     align-self: stretch;
+    align-items: center;
     flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content:start;
+}
+
+.project_title{
+    margin-top: 4%;
+    font-family: RobotoSlab_thin;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.project_desp{
+    margin-top: 4%;
+    font-family: RobotoSlab_light;
+    /* font-size: larger; */
+    /* font-weight: bold; */
 }
