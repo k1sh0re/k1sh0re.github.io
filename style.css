@@ -120,6 +120,9 @@ main {
   width: 200px;
   margin: 20px, 5px;
   border-radius: 50%;
+  background-image: url("images/meLowRes.jpg");
+  background-size: 100% 100%;
+  background-position: center; 
 }
 
 .description {
@@ -148,45 +151,41 @@ main {
   border-radius: 10px;
   margin-top: 5%;
 }
-
-#project_image_left {
-  width: 100%;
-  height: auto;
-  transition: transform 0.2s;
-  aspect-ratio: 4/3;
-}
-
-#project_image_left:hover {
-  transform: scale(1.1);
-}
-
 .project_grid {
+    width: 100%;
   display: grid;
   grid-template-columns: 47.5% 47.5%;
   grid-template-rows: auto auto;
   gap: 5%;
 }
 
-figure {
+.fig1{
+    background-image: url("projects/hexapod/images/src_img_LowRes.jpg");
+}
+.fig2{
+    background-image: url("projects/vtol/images/src_img_LowRes.jpg");
+}
+.figure {
+    width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   margin: 0;
-  /* overflow: hidden; */
+  aspect-ratio: 4/3;
   border-radius: 10px;
   align-items: center;
   justify-content:end;
-  background-image: url("projects/hexapod/images/src_img_LowRes.jpg");
-  /* background-size: cover; */
+  
   background-size: 100% 100%;
   background-position: center; 
   transition: background-size 0.2s;}
 
-figure:hover{
+.figure:hover{
     background-size: 110% 110%;; 
 }
 
-figure:hover .project_description{
+.figure:hover .project_description{
     visibility: visible;
     animation:  0.25s slide-up;
 }
@@ -201,11 +200,9 @@ figure:hover .project_description{
 .project_description {
     visibility: hidden;
     text-align: center;
-    
-    /* height: 30%; */
     width: 100%;
-    background-color: rgba(250, 235, 215, 0.504);
-    /* transition: visibility 0.25s ease-out ; */
+    background-color:rgba(240, 248, 255, 0.7);
+    padding: 2%;
 }
 
 @media only screen and (max-width: 700px) {
@@ -226,4 +223,8 @@ figure:hover .project_description{
     display: grid;
     grid-template-columns: 100%;
   }
+  .project_description{
+    visibility: visible;
+
+}
 }
