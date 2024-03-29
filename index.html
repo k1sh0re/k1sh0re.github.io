@@ -6,21 +6,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <header>
       <div class="nav_container">
-        <div class="nav_buttons">
-          <a href="index.html"><div class="active">Home</div></a>
-        </div>
-        <div class="nav_buttons"><a href="projects.html">Projects</a></div>
-        <div class="nav_buttons">
-          <a
+       <a class="nav_buttons" href="index.html"><div class="nav_item"><div class="active">Home</div></div></a>
+       <a class="nav_buttons" href="projects.html"><div class="nav_item">Projects</div></a>
+        <a class="nav_buttons"
             href="https://drive.google.com/file/d/12c8GRc1JL6IDVJbH-qewYgxiAbVY3i03/view"
-            target="_blank"
-            >CV</a
-          >
-        </div>
-        <div class="nav_buttons"><a href="about_me.html">About</a></div>
-      </div>
+            target="_blank"><div class="nav_item">CV</div></a>
+        <a class="nav_buttons" href="about_me.html"><div class="nav_item">About</div></a></div>
     </header>
 
     <main>
@@ -33,12 +27,15 @@
           <!-- <div class="description_2"> place_holder</div> -->
         </div>
       </div>
-      <div class="project_list">
+      <!-- <div class="project_list"> -->
         <div class="project_grid">
           <div class="figure fig1" ><div class="project_description"><b>Hexapod</b> <br> A six-legged robot capable of omni-directional locomotion and inertial stabilization. </div></div>
           <div class="figure fig2" > <div class="project_description"><b>VTOL</b> <br> A vertical take off and landing aircraft designed to carry a payload of upto 500g.  </div></div>
+          <div class="figure fig2" > <div class="project_description"><b>VTOL</b> <br> A vertical take off and landing aircraft designed to carry a payload of upto 500g.  </div></div>
+          <div class="figure fig1" ><div class="project_description"><b>Hexapod</b> <br> A six-legged robot capable of omni-directional locomotion and inertial stabilization. </div></div>
         </div>
-      </div>
+      <!-- </div> -->
+      <a class="view_all_projects" href="projects.html">  View All Projects </a>
     </main>
   </body>
 </html>
