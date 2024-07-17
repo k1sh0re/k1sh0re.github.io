@@ -145,7 +145,7 @@ main {
 
 .project_grid {
 
-    width: 75%;
+  width: 75%;
   display: grid;
   grid-template-columns: 47.5% 47.5%;
   gap: 5%;
@@ -159,7 +159,7 @@ main {
     background-image: url("projects/vtol/images/src_img_LowRes.jpg");
 }
 .figure {
-    width: 100%;
+  width: 100%;
   height: auto;
   max-height: 100%; 
   display: flex;
@@ -179,7 +179,7 @@ main {
     background-size: 110% 110%;; 
 }
 
-.figure:hover .project_description{
+.figure:hover .project_description_home{
     visibility: visible;
     animation:  0.25s slide-up;
 }
@@ -191,7 +191,7 @@ main {
     margin-bottom: 0%;
   }
 }
-.project_description {
+.project_description_home {
     visibility: hidden;
     text-align: center;
     width: 100%;
@@ -199,7 +199,7 @@ main {
     padding: 2%;
 }
 
-.view_all_projects{
+.custom_button{
   font-size: 110%;
   font-family: RobotoSlab_light, sans-serif;
   font-weight: bold;
@@ -211,7 +211,7 @@ main {
   transition: font-size 0.2s;
 }
 
-.view_all_projects:hover{
+.custom_button:hover{
   font-size: 120%;
 } 
 
@@ -236,14 +236,12 @@ main {
     margin-bottom: 5%;
     justify-self: stretch;
   }
-  .project_description{
+  .project_description_home{
     visibility: visible;
     font-size:80%;
 }
 
-.view_all_projects{
-  padding: 1% 3%;
-}
+
 }
 
 
