@@ -3,7 +3,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    margin-top: 2%;
+    margin-top: 1%;
   }
 
 .project_description {
@@ -15,15 +15,15 @@ main {
     animation: fade-in ease 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    
     overflow-x: hidden;
     max-width: 100%;
 }
 
 #name{
     font-weight: bold;
-    font-size: x-large;
-    margin: 1%;
+    font-size: xx-large;
+    margin-top: 1%;
+    margin-bottom: 2px;
 }
 #project_header{
     display: flex;
@@ -31,7 +31,7 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 2% 0%;
+    margin: 1% 0%;
 
 }
 
@@ -45,10 +45,12 @@ main {
     margin-bottom: 50px;
     font-size: large;
     overflow-x: hidden;
-    width: 40%;
+    width: 45%;
     height: 100%;
     background-color:#0087ca0b  ;
     border-radius: 2%;
+    border-style: solid;
+    border-color: #0087ca48;
     
 }
 #project_points{
@@ -100,12 +102,12 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    width: 50%;
 
 }
 
 #project_image_scroll {
-    margin: 5%;
+    margin: 4%;
     /* display: flex; */
     overflow-x: auto; 
     overflow-y: hidden; 
@@ -123,11 +125,11 @@ main {
 
 #project_image {
     scroll-snap-align: center;
-    height: auto;
+    /* max-height: vh; */
     width: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 4/3;
     object-fit: cover;
-    margin:0;
+    /* margin:0; */
     vertical-align:top;
     
   }
