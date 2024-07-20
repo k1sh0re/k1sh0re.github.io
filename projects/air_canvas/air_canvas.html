@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kishore's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../project_template.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+  </head>
+  <body>
+    <script src="../project_template.js" defer></script> 
+    <header>
+      <div class="nav_container">
+        <a class="nav_buttons" href="../../index.html"><div class="nav_item">Home</div></a>
+        <a class="nav_buttons" href="../../projects.html"><div class="nav_item"><div class="active">Projects</div></div></a>
+        <a class="nav_buttons"
+            href="https://drive.google.com/file/d/12c8GRc1JL6IDVJbH-qewYgxiAbVY3i03/view"
+            target="_blank"><div class="nav_item">CV</div></a>
+        <a class="nav_buttons" href="../../about_me.html"><div class="nav_item">About</div></a></div>
+    </header>
+    
+    <main>
+        <div class="project_description">
+            <div id="name"> Air Canvas</div>
+            <div id="data">Dec/2022</div>
+            <div id="project_header" > 
+            <div id="scroll_container">
+            <div id="project_image_scroll" >
+                <img class="project_image" src="images/src_img_2_LowRes.jpg" alt="Could not load image"/>
+                <!-- <img class="project_image" src="images/src_img_LowRes.jpg" alt="Could not load image"/> -->
+                <img class="project_image" src="images/src_img_3_LowRes.jpg" alt="Could not load image"/>
+
+                <video class="project_image" autoplay loop muted>
+                    <source src="images/air_canvas_hello.mp4" type="video/mp4">
+                    Your browser does not support the video format.
+                </video> 
+            </div>
+            <div id="scroll_buttons">
+                <button id="slideLeft" type="button"> &#10094</button>
+                <div id="scroll_dot">
+                    <var id="num_images" style="display: none;" >3</var>
+                    <div id="1" class="dot">&#8226</div>
+                    <div id="2" class="dot">&#8226</div>
+                    <div id="3" class="dot">&#8226</div>
+                    <!-- <div id="4" class="dot">&#8226</div> -->
+                </div>
+                <button id="slideRight" type="button"> &#10095 </button>
+            </div>
+            </div>
+            <div id="project_details">
+                <div id="project_points"> 
+                <ul>
+                  <li>Developed an application that utilizes color detection to track the motion of a colored object and draw it onto a virtual canvas.</li><br>
+                  <li>The application also has the options to pick different colors and to select multiple shapes to draw from.</li>
+                </ul>
+                </div>
+              <div class="project_links">
+                <a class="project_link"  href="https://github.com/k1sh0re/Air_Canvas" target="_blank">
+                  <i class="fab fa-github" style='font-size:30px'></i>
+                  <div class="link_name" >GitHub</div>
+                </a>
+                <!-- <a class="project_link"  href="https://youtu.be/rR-bNVElDwI" target="_blank">
+                  <i class="fab fa-youtube" style='font-size:30px'></i>
+                  <div class="link_name" >YouTube</div>
+                </a> -->
+
+              </div>
+            </div>
+            </div>
+            
+    </div>
+    </main>
+  </body>
+</html>
