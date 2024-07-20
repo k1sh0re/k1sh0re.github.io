@@ -28,24 +28,25 @@
             <div id="project_header" > 
             <div id="scroll_container">
             <div id="project_image_scroll" >
-                <img id="project_image" id="img1" src="images/src_img_LowRes.jpg" alt="Could not load image"/>
-                <img id="project_image" id="img2" src="images/src_img_2_LowRes.jpg" alt="Could not load image"/>
-                <video id="project_image" id="img4" autoplay loop muted>
+                <img class="project_image" src="images/src_img_LowRes.jpg" alt="Could not load image"/>
+                <img class="project_image" src="images/src_img_2_LowRes.jpg" alt="Could not load image"/>
+                <video class="project_image"autoplay loop muted>
                     <source src="images/hexapod_walk.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
+                    Your browser does not support the video format.
                 </video> 
-                <video id="project_image" id="img4" autoplay loop muted>
+                <video class="project_image" autoplay loop muted>
                     <source src="images/hexapod_obstacle.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
+                    Your browser does not support the video format.
                 </video> 
             </div>
             <div id="scroll_buttons">
                 <button id="slideLeft" type="button"> &#10094</button>
                 <div id="scroll_dot">
-                    <div id="1" id="dot">&#8226</div>
-                    <div id="2" id="dot">&#8226</div>
-                    <div id="3" id="dot">&#8226</div>
-                    <div id="4" id="dot">&#8226</div>
+                    <var id="num_images" style="display: none;" >4</var>
+                    <div id="1" class="dot">&#8226</div>
+                    <div id="2" class="dot">&#8226</div>
+                    <div id="3" class="dot">&#8226</div>
+                    <div id="4" class="dot">&#8226</div>
                 </div>
                 <button id="slideRight" type="button"> &#10095 </button>
             </div>

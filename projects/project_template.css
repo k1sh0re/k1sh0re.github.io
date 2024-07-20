@@ -80,7 +80,8 @@ main {
     padding: 5%;
     border-radius: 25px;
     text-align: center;
-    transition: font-size 0.2s;
+    /* transition: font-size  0.2s; */
+    transition: background-color 0.2s;
     background-color: #0087ca1f;
     color: #002245;
 
@@ -89,8 +90,10 @@ main {
 
 
 .project_link:hover{
-    font-size: 105%;
+    /* font-size: 105%; */
+    background-color: #0087ca3f;
   }
+
   
 .link_name{
     margin: 5px ;
@@ -115,7 +118,7 @@ main {
     scroll-snap-type: x mandatory;
     -ms-overflow-style: none; 
     scrollbar-width: none;
-    border-radius: 2%;
+    border-radius: 10px !important;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 
@@ -123,15 +126,31 @@ main {
     display: none; 
   }
 
-#project_image {
+.project_image {
     scroll-snap-align: center;
     /* max-height: vh; */
     width: 100%;
     aspect-ratio: 4/3;
-    object-fit: cover;
     /* margin:0; */
     vertical-align:top;
-    
+    object-fit: cover !important;
+    border-radius: 10px !important;
+  }
+
+
+.fade {
+    animation: fade-in ease 0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
 #scroll_buttons{
@@ -153,30 +172,34 @@ main {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.4s;
+    transition: background-color 0.4s ,scale 0.4s;
+    /* transition: 0.4s; */
 }
 
 #scroll_buttons button:hover{
     background-color: #002245;
+    scale: 1.05;
 }
 #scroll_dot{
     width: 150px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: 1%;
     font-weight: bolder ;
     font-size: xx-large;
     color: #0087ca;
     margin: 0 50px;
-    
     -webkit-user-select: none; 
     -ms-user-select: none; 
     user-select: none; 
       
 }
 
+.dot{
+    margin: 0 10px;
+}
 
 
 @media only screen and (max-width: 1500px) {
