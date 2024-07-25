@@ -164,7 +164,7 @@ main {
 
 #scroll_buttons button{
     margin: 1%;
-    padding: 1%;
+    padding: 8px;
     font-size: large;
     font-weight: bold;
     background-color: #0087ca;
@@ -172,7 +172,7 @@ main {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.4s ,scale 0.4s;
+    transition: background-color 0.2s ,scale 0.2s;
     /* transition: 0.4s; */
 }
 
@@ -203,13 +203,15 @@ main {
 
 
 @media only screen and (max-width: 1500px) {
-    
+    #name{
+      margin-top: 25px ;
+    }
     #project_header {
       display: flex;
       flex-direction: column;
     }
     #scroll_container{
-        width: 90%;
+        width: 70%;
     }
     #project_details {
       width: 90%;
@@ -217,3 +219,11 @@ main {
       padding: 10px;
     }
   }
+
+@media only screen and (max-width: 1000px) {
+    #scroll_container{
+      width: 90%;
+    }
+  }
+  
+
