@@ -157,14 +157,6 @@ main {
   animation-fill-mode: forwards;
 }
 
-
-
-.fig1{
-    background-image: url("projects/hexapod/images/src_img_LowRes.jpg");
-}
-.fig2{
-    background-image: url("projects/vtol/images/src_img_LowRes.jpg");
-}
 .figure {
   width: 100%;
   height: auto;
@@ -224,7 +216,7 @@ main {
   font-size: 110%;
   font-family: RobotoSlab_light, sans-serif;
   font-weight: bold;
-  padding: 1%;
+  padding: 15px;
   margin: 5%;
   border: #0087ca solid ;
   background-color:#0087ca0b  ;
@@ -235,6 +227,55 @@ main {
 .custom_button:hover{
   font-size: 120%;
 } 
+
+
+.about_me_container{
+  margin-top: 5%;
+  display: flex;
+  width: 70%;
+  height: auto;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  background-color:#fdfce74d ;
+  border-radius: 3% 3% 3% 3%  !important;
+  border-style: solid;
+  border-color: #0087ca11;
+  padding: 2%;
+  animation: fade-in ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#my_image_about {
+  height: 300px;
+  width: 300px;
+  margin: 0px, 5px;
+  margin-left: 5%;
+  border-radius: 25% 25%;
+  background-image: url("images/meLowRes.jpg");
+  background-size: 100% 100%;
+  background-position: center; 
+}
+
+.about_me_info{
+  width: 50%;
+  /* margin: 20px 10%; */
+
+  display: flex;
+  /* flex-direction: column; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2% 3% 0 5%;
+  margin-bottom: 50px;
+  font-size: large;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+
 
 
 
@@ -258,9 +299,6 @@ main {
     font-size:80%;
 }
 }
-
-
-
 @media only screen and (max-width: 1000px) {
   .project_grid {
     display: grid;
@@ -281,3 +319,17 @@ main {
     row-gap: 3%;
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .about_me_container{
+    margin-top: 2%;
+    flex-direction: column;  }
+  
+
+  .about_me_info{
+    width: 90%;}
+
+    #my_image_about {
+    margin-top: 100px;
+    }
+  }
