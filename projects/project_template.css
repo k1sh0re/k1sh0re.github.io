@@ -97,7 +97,7 @@ main {
   
 .link_name{
     margin: 5px ;
-    width: 70px;
+    width: 100%;
 }
 
 #scroll_container{
@@ -158,7 +158,7 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 150%;
   }
 
 
@@ -173,6 +173,7 @@ main {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.2s ,scale 0.2s;
+
     /* transition: 0.4s; */
 }
 
@@ -223,6 +224,9 @@ main {
 @media only screen and (max-width: 1000px) {
     #scroll_container{
       width: 90%;
+    }
+    #scroll_buttons button{
+      width: 8%;
     }
   }
   
